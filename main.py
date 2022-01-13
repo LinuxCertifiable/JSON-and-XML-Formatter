@@ -5,7 +5,7 @@ import xml.dom.minidom
 from tkinter.filedialog import asksaveasfile
 import random, string, os
 import time
-# The initialiser
+
 
 window = Tk()
 # application title
@@ -138,8 +138,6 @@ def SaveToFile():
     Output.insert('1.0', f"Your file has been saved here:{new_file.name}")
 
 
-# def userinput():
-#  return inputtxt.get("1.0", "end")
 
 def UpperCharacter(s):
     res = ""
@@ -195,7 +193,6 @@ def Dark():
         Output.insert("1.0", "Something went wrong. Please restart")
 
 
-# def
 
 
 # Here we define the buttons, labels, text boxes and their respective functions which we defined above ^.
@@ -222,7 +219,7 @@ DarkTheme = Button(window, text="Change theme", fg="white", background="black",
 
 InstallDependancies()
 welcomeMessage()
-# -- It matters the order which we initialise these functions -- #
+# -- It matters the order which we initialise these functions, as buttons will spawn in that order. -- #
 # initialise the label
 l.pack()
 # initalise text input
